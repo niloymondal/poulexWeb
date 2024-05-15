@@ -1,0 +1,386 @@
+@font-face {
+    font-family: 'SulimanLipi';
+    src: url('font/SolaimanLipi_22-02-2012.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Li Ador Noirrit Bold';
+    src: url('font/Li Ador Noirrit Bold.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Li Ador Noirrit Bold', sans-serif;
+    overflow-x: hidden;
+}
+.bg-main{
+    background-color: cornsilk;
+    /*background-color: #FFFB57;*/
+}
+footer{
+    background-color: cornsilk;
+}
+p {
+    text-align: justify;
+}
+
+
+/*other page bg*/
+.page-content {
+    background-color: rgba(242, 246, 238, 1);
+    min-height: 100vh;
+}
+
+.card {
+    border: 1px solid #28a745;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.card:hover {
+    border: 1px solid #007bff;
+    transform: scale(1.1);
+    /*background: #5cb247;*/
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: #28a745;
+    }
+    50% {
+        border-color: #007bff;
+    }
+    100% {
+        border-color: #28a745;
+    }
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.pricing-card-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.pricingCard {
+    flex: 1;
+    transition: all .3s ease-out;
+    background-color: white;
+    margin: .5rem 1rem;
+    padding: 2rem 1rem;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    cursor: pointer;
+}
+.centers {
+    transform: scale(1.1);
+}
+.pricingCard-title {
+    text-align: center;
+}
+.pricingCard-pricing {
+    text-align: center;
+}
+.price {
+    font-size:  3rem;
+    font-weight: 600;
+}
+.pricingCard-basket {
+    display: block;
+    background-color: darkolivegreen;
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 100px;
+    font-weight: 600;
+    margin: 1rem;
+    text-decoration: none;
+}
+.pricingCard-refresh {
+    text-align: center;
+    /*color: greenyellow;*/
+}
+.pricingCard-properties {
+    padding: 1rem 0;
+}
+
+.pricingCard-all-properties {
+    text-align: center;
+}
+.pricingCard-all-properties a {
+    color:  #491bd5;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: large;
+}
+.pricingCard-all-properties a:hover {
+    color: #54595F;
+}
+
+
+
+/* pricingCard-basket */
+
+
+.pricingCard-basket-container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+@media (max-width: 600px) {
+    .pricingCard-basket-container {
+        width: 100%;
+        margin: 0;
+    }
+}
+.pricingCard-basket-container .pricingCard-basket-title {
+    padding-top: 3rem;
+}
+.pricingCard-basket-container .pricingCard-basket-title h1 {
+    padding: 2rem 1rem;
+    padding-top: 0;
+}
+.pricingCard-basket-container .pricingCard-basket-title h3 {
+    font-size: 1.5rem;
+}
+.pricingCard-basket-container .pricingCard-basket-title p span {
+    font-weight: 600;
+}
+
+.pricingCard-basket-container .plan-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.pricingCard-basket-container .plan-container .plan {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #fff;
+    flex: 1;
+    border: 2px solid lightgrey;
+    transition: all .5s;
+    cursor: pointer;
+
+}
+.pricingCard-basket-container .plan-container .plan i {
+    color: #fff;
+    font-size: .7rem;
+    border: 2px solid lightgrey;
+    border-radius: 50%;
+    padding: .3rem;
+    transition: all .8s;
+}
+.pricingCard-basket-container .plan-container .plan .onay {
+    background-color: #673de6;
+}
+
+
+.pricingCard-basket-container .plan-container .plan .plan-time {
+    text-align: center;
+    font-weight: 600;
+}
+.pricingCard-basket-container .plan-container .plan .plan-price {
+    text-align: center;
+    padding: 2rem;
+}
+.pricingCard-basket-container .plan-container .plan .plan-price h2 {
+    font-size: 2rem;
+}
+.pricingCard-basket-container .plan-container .plan .plan-price p {
+    color: #727586;
+    font-weight: 600;
+}
+
+.pricingCard-basket-container .plan-container .plan .plan-date {
+    text-align: center;
+    color: #727586;
+}
+
+.pricingCard-basket-container .total-snow {
+    text-align: right;
+    padding: 0 3rem;
+}
+.pricingCard-basket-container .total-snow .snow {
+    color: #2f1c6a;
+    border-bottom: 2px solid lightgrey;
+}
+.pricingCard-basket-container .total-snow .total {
+    color: #673de6;
+    font-size: 1.2rem;
+    padding-top: .5rem;
+}
+
+.payment-container {
+    display: flex;
+}
+.payment-container .payment {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #fff;
+    flex: 1;
+    flex-wrap: wrap;
+    border: 2px solid lightgrey;
+    transition: all .5s;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.payment-container .payment  h3 {
+    color: #673de6;
+    padding-left: 1rem;
+}
+.payment-container .payment i {
+    color: #fff;
+    font-size: .7rem;
+    border: 2px solid lightgrey;
+    border-radius: 50%;
+    padding: .3rem;
+    transition: all .8s;
+}
+.payment-container .payment .onay {
+    background-color: #673de6;
+}
+
+.checkout-container {
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    padding: 1rem;
+}
+.checkout-container .checkout-detail {
+    display: flex;
+    margin: 1rem 0;
+}
+.checkout-container .checkout-detail p{
+    color: #727586;
+    flex: 1;
+}
+.checkout-container .checkout-detail span {
+    font-weight: 600;
+}
+.hr {
+    border: 1px solid lightgrey;
+}
+.checkout-container .checkout-total {
+    margin-top: 1rem;
+}
+.checkout-container .checkout-total .total{
+    display: flex;
+}
+.checkout-container .checkout-total .total h3{
+    flex: 1;
+    font-size: 1.5rem;
+}
+.checkout-container .checkout-total .total span {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.checkout-container .pay {
+    display: flex;
+}
+.checkout-container .pay button{
+    background-color: #673de6;
+    border:none;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    color: #fff;
+    border-radius: 5px;
+    margin: 1rem 0;
+    cursor: pointer;
+
+}
+
+.pay-property {
+    padding: 1rem;
+}
+.pay-property i {
+    color: #00b090;
+    padding-right: .3rem;
+}
+
+
+@media screen and (max-width: 880px) {
+
+    .container .container__img-holder:nth-child(3n+1) {
+    margin-left: 16px;
+    }
+
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 21px;
+    font-weight: 800;
+    border: none;
+    outline: none;
+    background: #009A4E;
+    color: #ffff;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+#myBtn:hover {
+    background: #ef0f0f;
+}
+.loction-map{
+    height: 522px;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+}
+
+
+/* contact.html page style */
+.input-container {
+    position: relative;
+}
+
+/* Style the label */
+.input-container label {
+    position: absolute;
+    top: -10px;
+    left: 17px;
+    background-color: rgb(251 251 251);
+    padding: 0 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Style the input field */
+.custom-input {
+    width: 100%;
+    /*background-color: rgba(242, 246, 238, 1);*/
+    padding: 10px;
+    border: 1px solid rgba(196, 201, 191, 1);
+    outline: none;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+/* Style the textarea */
+.custom-textarea {
+    width: 100%;
+    height: 150px; /* Adjust the height as needed */
+    /*background-color: rgba(242, 246, 238, 1);*/
+    padding: 10px;
+    border: 1px solid rgba(196, 201, 191, 1);
+    outline: none;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: vertical; /* Allow vertical resizing */
+}
