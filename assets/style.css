@@ -30,7 +30,7 @@ p {
 }
 
 .card {
-    border: 1px solid #28a745;
+    border: 1px solid #212529;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
 }
@@ -390,17 +390,48 @@ p {
 
     display: text;
         padding: 12px 24px; /* Adjust padding to increase button size */
-        font-size: 18px; /* Adjust font size */
+        font-size: 24px; /* Adjust font size */
         background-color: inherit; /* Button background color */
         color: rgb(230, 17, 17); /* Button text color */
         border: none; /* Remove button border */
         border-radius: 8px; /* Optional: Add border radius for rounded corners */
         cursor: pointer;
-        text-decoration: none; /* Remove underline from text */
+        text-decoration: underline; /* Remove underline from text */
 }
 
 .about-img{
 
     rotate: -4.99deg;
     background: #FFD90F;
+    position: relative;
+  top: -6px;
 }
+
+.red-arrow-btn {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .red-arrow-btn .fas {
+    margin-right: 5px;
+  }
+
+  .carousel-inner{
+    display: flex;
+    padding: 1em;
+  }
+
+  .card{
+    margin: 0.5em;
+  }
+
+  .carousel-item{
+    
+    
+    margin-right: 0;
+    flex: 0 0 calc(100%/3);
+    
+  }

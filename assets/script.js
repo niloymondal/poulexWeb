@@ -23,6 +23,13 @@ $('.owl-carousel').owlCarousel({
     items:4
 })
 
+// $('.owl-carousel').owlCarousel({
+//     margin:10,
+//     loop:true,
+//     autoWidth:true,
+//     items:4
+// })
+
 document.addEventListener('DOMContentLoaded', function () {
     var currentYear = new Date().getFullYear();
     document.getElementById('currentYear').textContent = currentYear;
