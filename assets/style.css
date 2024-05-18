@@ -79,33 +79,68 @@ p {
 .centers {
     transform: scale(1.1);
 }
-.pricingCard-title {
+.pricingCard-title1 {
     text-align: center;
+    color: rgb(249, 252, 245);
+    background-color:#0867d2 ;
+    padding: .25em;
+    margin:-20px ;
+    border-radius: 0.5rem 0.5rem 0 0;
+    
 }
+
+/* custom title */
+
+.pricingCard-title2 {
+    text-align: center;
+    color: #4ebad4;
+    background-color: rgba(249, 252, 245, 0.815); 
+    padding: .25em;
+    margin:-20px ;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
 .pricingCard-pricing {
     text-align: center;
+    color: rgb(249, 252, 245);
 }
 .price {
     font-size:  3rem;
     font-weight: 600;
 }
-.pricingCard-basket {
+.pricingCard-basket1 {
     display: block;
-    background-color: darkolivegreen;
+    background-color: rgb(249, 252, 245);
     text-align: center;
-    color: #fff;
+    color: #4ebad4;
     padding: 1rem;
     border-radius: 100px;
-    font-weight: 600;
+    font-weight: 1000;
     margin: 1rem;
     text-decoration: none;
 }
+
+/* customize */
+.pricingCard-basket2 {
+    display: block;
+    background-color: #0867d2;
+    text-align: center;
+    color: rgb(249, 252, 245);
+    padding: 1rem;
+    border-radius: 100px;
+    font-weight: 1000;
+    margin: 1rem;
+    text-decoration: none;
+}
+
 .pricingCard-refresh {
     text-align: center;
-    /*color: greenyellow;*/
+    color: rgb(249, 252, 245);
+    /* color: #adff2e; */
 }
 .pricingCard-properties {
     padding: 1rem 0;
+    color: rgb(249, 252, 245);
 }
 
 .pricingCard-all-properties {
@@ -435,3 +470,84 @@ p {
     flex: 0 0 calc(100%/3);
     
   }
+
+/* unorder list alignment */
+.unorder-list{
+    list-style-type: disc; 
+    margin-bottom: 0.5rem; 
+    padding-left: 20px;
+    text-align: left;
+}
+
+.unorder-list1{
+    list-style-type: none; 
+    margin-bottom: 0.5rem; 
+    padding-left: 20px;
+    text-align: left;
+}
+.unorder-list2{
+    list-style-type: none; 
+    margin-bottom: 0.5rem; 
+    padding-left: 20px;
+    text-align: left;
+}
+ 
+
+.unorder-list1 li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: rgb(251 251 251);
+}
+
+.unorder-list1 li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #0867d2; /* Blue circle color */
+    border: 2px solid #fff;
+    box-sizing: border-box;
+}
+
+.unorder-list1 li:after {
+    content: '\2713'; /* White checkmark character */
+    position: absolute;
+    left: 5px;
+    top: 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+ /* Define custom list styles */
+ 
+
+/* Style each list item */
+.unorder-list2 li {
+    position: relative; /* Positioning context for pseudo-elements */
+    padding-left: 30px; /* Add left padding for space */
+    margin-bottom: 10px; /* Add bottom margin for spacing between items */
+    line-height: 1.5; /* Set line height for better readability */
+    color: rgb(251 251 251); /* Set text color */
+}
+
+/* Style the circle */
+.unorder-list2 li:before {
+    content: '✕'; /* Use cross mark character */
+    position: absolute; /* Position the cross mark */
+    left: 0; /* Align cross mark to the left */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    width: 20px; /* Set cross mark width */
+    height: 20px; /* Set cross mark height */
+    border-radius: 50%; /* Make cross mark round */
+    background-color: #ccc; /* Set cross mark color */
+    color: #fff; /* Set cross mark text color */
+    text-align: center; /* Center cross mark */
+    line-height: 20px; /* Center cross mark vertically */
+    font-size: 16px; /* Set cross mark size */
+}
