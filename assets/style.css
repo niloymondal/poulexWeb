@@ -16,7 +16,8 @@ body {
     /*background-color: #FFFB57;*/
 }
 footer{
-    background-color: cornsilk;
+    background-color: #212121;
+    color: white;
 }
 p {
     text-align: justify;
@@ -91,14 +92,14 @@ p {
 
 /* custom title */
 
-.pricingCard-title2 {
+/* .pricingCard-title2 {
     text-align: center;
     color: #4ebad4;
     background-color: rgba(249, 252, 245, 0.815); 
     padding: .25em;
     margin:-20px ;
     border-radius: 0.5rem 0.5rem 0 0;
-}
+} */
 
 .pricingCard-pricing {
     text-align: center;
@@ -108,7 +109,7 @@ p {
     font-size:  3rem;
     font-weight: 600;
 }
-.pricingCard-basket1 {
+/* .pricingCard-basket1 {
     display: block;
     background-color: rgb(249, 252, 245);
     text-align: center;
@@ -118,7 +119,7 @@ p {
     font-weight: 1000;
     margin: 1rem;
     text-decoration: none;
-}
+} */
 
 /* customize */
 .pricingCard-basket2 {
@@ -373,6 +374,7 @@ p {
 }
 
 .avatar {
+    align-content: center;
     vertical-align: middle;
     width: 50px;
     height: 50px;
@@ -551,3 +553,62 @@ p {
     line-height: 20px; /* Center cross mark vertically */
     font-size: 16px; /* Set cross mark size */
 }
+
+/* creating white line */
+.white-line {
+    border: none;
+    border-top: 2px solid white; /* Adjust thickness here */
+    width: 100%; /* Adjust width here */
+    margin: 20px 0; /* Adjust margin here */
+}
+.container {
+    background-color: inherit; /* Background color to see the white line */
+    padding: 20px;
+}
+
+/* custom container for newsletter */
+
+
+.subscribe-form {
+    background-color: inherit;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: inherit;
+    display: flex;
+  }
+  .subscribe-form h2 {
+    margin-bottom: 20px;
+  }
+  .subscribe-form input[type="email"] {
+    width: 100%;
+    
+    
+    border: 1px solid #1d1b1b;
+    border-radius: 5px;
+    flex-grow: 1;
+  }
+  .subscribe-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #7c1204;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .subscribe-form button:hover {
+    background-color: #ec2715;
+  }
+
+  /* social media icons */
+  .social-icons {
+    display: flex;
+    gap: 15px; /* Add space between the icons */
+  }
+  .social-icons a {
+    color: #f3efef; /* Change to desired color */
+    font-size: 24px; /* Adjust size as needed */
+    text-decoration: none;
+  }
+  .social-icons a:hover {
+    color: #007bff; /* Change hover color if desired */
+  }
