@@ -571,21 +571,21 @@ p {
 
 .subscribe-form {
     background-color: inherit;
-    padding: 20px;
+   width: 100%;
     border-radius: 5px;
-    box-shadow: inherit;
+    
     display: flex;
   }
   .subscribe-form h2 {
     margin-bottom: 20px;
   }
   .subscribe-form input[type="email"] {
-    width: 100%;
-    
-    
+    margin-left: -10px;
     border: 1px solid #1d1b1b;
     border-radius: 5px;
-    flex-grow: 1;
+    flex-grow: 2;
+    position: relative;
+    margin-right: 5px;
   }
   .subscribe-form button {
     padding: 10px 20px;
@@ -594,6 +594,8 @@ p {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    flex-shrink: 0;
+    
   }
   .subscribe-form button:hover {
     background-color: #ec2715;
@@ -602,6 +604,7 @@ p {
   /* social media icons */
   .social-icons {
     display: flex;
+    justify-content: space-around;
     gap: 15px; /* Add space between the icons */
   }
   .social-icons a {
@@ -612,3 +615,19 @@ p {
   .social-icons a:hover {
     color: #007bff; /* Change hover color if desired */
   }
+
+  /* custom design */
+  .design1{
+    font-size: x-large; 
+    text-align:start;
+    display: flex;
+    width: 100%;
+    flex-grow: 2;
+    flex-shrink: 0;
+    margin-left: -10px;
+    position: relative;
+
+  }
+
+
+  
