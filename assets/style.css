@@ -456,21 +456,36 @@ p {
     margin-right: 5px;
   }
 
+
+
+  .carousel-item img {
+   /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+}
+
   .carousel-inner{
     display: flex;
     padding: 1em;
   }
 
-  .card{
-    margin: 0.5em;
-  }
 
   .carousel-item{
-    
-    
     margin-right: 0;
     flex: 0 0 calc(100%/3);
+    width: 100%;
     
+  }
+
+  .carousel-caption h5{
+    font-size: 25px;
+    
+    letter-spacing: 2px;
+    margin-top: 25px;
+    color:rgb(207, 188, 14);
+}
+
+  .card{
+    margin: 0.5em;
   }
 
 /* unorder list alignment */
@@ -629,5 +644,22 @@ p {
 
   }
 
+  .footer-parent {
+    margin: 0;
+    padding: 0;
+}
 
+.footer {
+    display: block;
+    unicode-bidi: isolate;
+    position: fixed; /* or absolute */
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
   
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
