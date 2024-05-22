@@ -16,14 +16,47 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
+$(document).ready(function(){
+    $('#carouselExampleCaptions').carousel({
+        interval: 3000, // Set the interval between slides
+        pause: 'hover' // Pause the carousel on mouse hover
+    });
+});
 
 
-$('.owl-carousel').owlCarousel({
-    margin:10,
-    loop:true,
-    autoWidth:true,
-    items:4
-})
+$(document).ready(function(){
+    var owl = $('.owl-carousel');
+    
+    owl.owlCarousel({
+        margin: 10,
+        loop: true,
+        autoWidth: true,
+        items: 4,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: { items: 1 },
+            768: { items: 2 },
+            992: { items: 3 },
+            1200: { items: 4 }
+        }
+    });
+    
+    // Custom event handler to update active dot
+    owl.on('changed.owl.carousel', function(event) {
+        var currentIndex = event.item.index;
+        $('.owl-dot').removeClass('active'); // Remove active class from all dots
+        $('.owl-dot').eq(currentIndex).addClass('active'); // Add active class to the corresponding dot
+    });
+    // Add event listener to dot buttons
+    $('.owl-dots button.owl-dot').click(function(){
+        var index = $(this).index();
+        owl.trigger('to.owl.carousel', [index]); // Go to the specified slide index
+    });
+});
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
     var currentYear = new Date().getFullYear();
