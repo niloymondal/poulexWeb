@@ -536,10 +536,11 @@ p {
 
 /* unorder list alignment */
 .unorder-list{
-    list-style-type: disc; 
+    list-style-type: none; 
     margin-bottom: 0.5rem; 
     padding-left: 20px;
     text-align: left;
+    
 }
 
 .unorder-list1{
