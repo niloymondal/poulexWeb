@@ -9,7 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <!-- Bootstrap CSS -->
-<!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet"> -->
 
     <link
       rel="stylesheet"
@@ -102,8 +102,6 @@
       class="carousel carousel-dark slide pointer-events"
       data-bs-ride="carousel"
       data-bs-interval="3000"
-      
-     
     >
       <div class="carousel-indicators">
         <button
@@ -111,12 +109,13 @@
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide-to="0"
           aria-label="Slide 1"
+          class="active"
         ></button>
         <button
           type="button"
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide-to="1"
-          class="active"
+          
           aria-current="true"
           aria-label="Slide 2"
         ></button>
@@ -140,16 +139,12 @@
         ></button>
       </div>
       <div class="carousel-inner">
-        <div
-          class="carousel-item" 
-          
-        >
+        <div class="carousel-item">
           <img
-            src="assets/image/slider/slide1.jpg"
+            src="assets/image/slider1/slide1.jpg"
             class="d-block w-100"
             alt="First slide"
-            style="height: 75vh;"
-           
+            style="height: 75vh"
           />
           <div class="carousel-caption d-none d-md-block">
             <h5
@@ -164,16 +159,12 @@
             </h5>
           </div>
         </div>
-        <div
-          class="carousel-item active"
-          
-        >
+        <div class="carousel-item active">
           <img
-            src="assets/image/slider/slide2.jpg"
+            src="assets/image/slider1/slide2.jpg"
             class="d-block w-100"
             alt="Second slide"
-            style="height: 75vh;"
-            
+            style="height: 75vh"
           />
           <div class="carousel-caption d-none d-md-block">
             <h5
@@ -188,16 +179,12 @@
             </h5>
           </div>
         </div>
-        <div
-          class="carousel-item"
-          
-        >
+        <div class="carousel-item">
           <img
-            src="assets/image/slider/slide3.jpg"
+            src="assets/image/slider1/slide3.jpg"
             class="d-block w-100"
             alt="Third slide"
-            style="height: 75vh;"
-           
+            style="height: 75vh"
           />
           <div class="carousel-caption d-none d-md-block">
             <h5
@@ -212,16 +199,12 @@
             </h5>
           </div>
         </div>
-        <div
-          class="carousel-item"
-          
-        >
+        <div class="carousel-item">
           <img
-            src="assets/image/slider/slide4.jpg"
+            src="assets/image/slider1/slide4.jpg"
             class="d-block w-100"
             alt="Fourth slide"
-            style="height: 75vh;"
-            
+            style="height: 75vh"
           />
           <div class="carousel-caption d-none d-md-block">
             <h5
@@ -236,16 +219,12 @@
             </h5>
           </div>
         </div>
-        <div
-          class="carousel-item"
-          
-        >
+        <div class="carousel-item">
           <img
-            src="assets/image/slider/slide5.jpg"
+            src="assets/image/slider1/slide5.jpg"
             class="d-block w-100"
             alt="Fifth slide"
-            style="height: 75vh;"
-            
+            style="height: 75vh"
           />
           <div class="carousel-caption d-none d-md-block">
             <h5
@@ -261,16 +240,26 @@
           </div>
         </div>
       </div>
-      
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+
+      <!-- Controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
-    </button>
+      </button>
     </div>
 
     <!-- About Poulex -->
@@ -310,13 +299,13 @@
             economic benefits for farmers and contributing to the modernization
             of the agriculture sector in Bangladesh.
           </p>
-<div style="position:static; margin-left: -25px;">
-          <p>
-            <a href="#" class="my-button" class="btn btn-link text-danger">
-              Read More <i class="bi bi-arrow-up-right"></i>
-            </a>
-          </p>
-</div>
+          <div style="position: static; margin-left: -25px">
+            <p>
+              <a href="#" class="my-button" class="btn btn-link text-danger">
+                Read More <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -441,20 +430,20 @@
             ></button>
           </div>
 
-          <div class="carousel-inner">
+          <div class="carousel-inner container-fluid">
             <div class="carousel-item active">
-              <div class="card mb-3" style="width: 1250px; height: 369px">
+              <div class="card mb-3" style="width: auto; height: auto">
                 <div class="row g-1">
-                  <div class="col-md-6">
+                  <div class="col-md-7">
                     <img
-                      src="assets\image\card-slider\aboutImage.webp"
-                      class="img-fluid rounded-start"
+                      src="assets\image\card-slider\slide1.jpg"
+                      class="img-fluid"
                       alt="card-img1"
-                      width="324"
-                      height="50"
+                      width="730"
+                      height="323"
                     />
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-5">
                     <div class="card-body">
                       <h5 class="card-title mb-3">Poulex Shop</h5>
                       <p class="card-text">
@@ -482,18 +471,18 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card mb-3" style="width: 1250px; height: 369px">
+              <div class="card mb-3" style="width: auto; height: auto">
                 <div class="row g-1">
-                  <div class="col-md-6">
+                  <div class="col-md-7">
                     <img
-                      src="assets\image\card-slider\aboutImage.webp"
-                      class="img-fluid rounded-start"
+                      src="assets\image\card-slider\slide2.jpg"
+                      class="img-fluid"
                       alt="card-img2"
-                      width="324"
-                      height="105"
+                      width="730"
+                      height="323"
                     />
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-5">
                     <div class="card-body">
                       <h5 class="card-title">Poulex Farm</h5>
                       <p class="card-text">
@@ -521,18 +510,18 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card mb-3" style="width: 1250px; height: 369px">
+              <div class="card mb-3" style="width: auto; height: auto">
                 <div class="row g-1">
-                  <div class="col-md-6">
+                  <div class="col-md-7">
                     <img
-                      src="assets\image\card-slider\aboutImage.webp"
-                      class="img-fluid rounded-start"
+                      src="assets\image\card-slider\slide3.jpg"
+                      class="img-fluid"
                       alt="card-img3"
-                      width="324"
-                      height="105"
+                      width="730"
+                      height="323"
                     />
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-5">
                     <div class="card-body">
                       <h5 class="card-title">Poulex Dot</h5>
                       <p class="card-text">
@@ -585,7 +574,7 @@
     <!-- Research & Development -->
     <div
       class="container pb-5 text-center"
-      style="width: 1436px; height: 571px; top: 2565px; margin-top: 10px;"
+      style="width: 1436px; height: 571px; top: 2565px; margin-top: 75px"
     >
       <div class="row">
         <h1 class="mb-5">
@@ -599,16 +588,16 @@
             <div class="item border" style="width: 94%; height: 100%">
               <div class="container text-center">
                 <div class="row my-5 mx-3">
-                  <div class="col-sm-12 col-md-4 my-auto">
+                  <div class="col-sm-12 col-md-7 my-auto">
                     <img
-                      src="assets/image/poulexLogo.png"
-                      class=""
+                      src="assets\image\slider2\slide1.JPG"
                       alt="R&D Logo"
-                      sizes=""
-                      srcset=""
+                      width="730"
+                      height="400"
+                      
                     />
                   </div>
-                  <div class="col-sm-12 col-md-8">
+                  <div class="col-sm-12 col-md-5">
                     <h4 class="mb-3">Poulex Shop</h4>
                     <p class="">
                       There are many variations of passages of Lorem Ipsum
@@ -633,15 +622,16 @@
             <div class="item border" style="width: 94%; height: 100%">
               <div class="container text-center">
                 <div class="row my-5 mx-3">
-                  <div class="col-4 my-auto">
+                  <div class="col-7 my-auto">
                     <img
-                      src="assets/image/research.png"
-                      class="w-50"
+                      src="assets\image\slider2\slide2.JPG"
                       alt="R&D Logo"
-                      srcset=""
+                      width="730"
+                      height="400"
+                      
                     />
                   </div>
-                  <div class="col-8">
+                  <div class="col-5">
                     <h4 class="mb-3">Introducing IoT</h4>
                     <p class="">
                       There are many variations of passages of Lorem Ipsum
@@ -667,17 +657,17 @@
             <div class="item border" style="width: 94%; height: 100%">
               <div class="container text-center">
                 <div class="row my-5 mx-3">
-                  <div class="col-4 my-auto">
+                  <div class="col-7 my-auto">
                     <img
-                      src="assets/image/poulexLogo.png"
-                      class=""
+                      src="assets\image\slider2\slide3.JPG"
                       alt="R&D Logo"
-                      sizes=""
-                      srcset=""
+                      width="730"
+                      height="400"
+                     
                     />
                   </div>
-                  <div class="col-8">
-                    <h4 class="mb-3">Mimba Shop</h4>
+                  <div class="col-5">
+                    <h4 class="mb-3">Poulex Shop</h4>
                     <p class="">
                       There are many variations of passages of Lorem Ipsum
                       available, but the majority have suffered alteration in
@@ -701,15 +691,16 @@
             <div class="item border" style="width: 94%; height: 100%">
               <div class="container text-center">
                 <div class="row my-5 mx-3">
-                  <div class="col-4 my-auto">
+                  <div class="col-7 my-auto">
                     <img
-                      src="assets/image/research.png"
-                      class="w-50"
+                      src="assets\image\slider2\slide4.JPG"
                       alt="R&D Logo"
+                      width="730"
+                      height="400"
                       srcset=""
                     />
                   </div>
-                  <div class="col-8">
+                  <div class="col-5">
                     <h4 class="mb-3">Introducing IoT</h4>
                     <p class="">
                       There are many variations of passages of Lorem Ipsum
@@ -733,24 +724,21 @@
               </div>
             </div>
           </div>
-          
         </div>
-        
       </div>
-      
     </div>
     <!-- Manually created dot buttons -->
-<div class="owl-dots" style="margin-top: -75px; margin-bottom: 75px;">
-  <button role="button" class="owl-dot active"><span></span></button>
-  <button role="button" class="owl-dot"><span></span></button>
-  <button role="button" class="owl-dot"><span></span></button>
-  <button role="button" class="owl-dot"><span></span></button>
-</div>
+    <div class="owl-dots" style="margin-top: 100px; margin-bottom: 100px">
+      <button role="button" class="owl-dot active"><span></span></button>
+      <button role="button" class="owl-dot"><span></span></button>
+      <button role="button" class="owl-dot"><span></span></button>
+      <button role="button" class="owl-dot"><span></span></button>
+    </div>
 
     <!-- Area of Activity -->
     <div
       class="container pb-5 text-center"
-      style="width: 1436px; height: 825px; top: 3216px; margin-top:10px"
+      style="width: 1436px; height: 825px; top: 3216px; margin-top: 10px"
     >
       <h1 class="mb-5">
         <span class="text-dark fs-1"
@@ -760,7 +748,11 @@
       <div class="text-center">
         <div class="row">
           <div class="col-sm-12 col-md-8 col-lg-8">
-            <img src="assets/image/map1.png" alt="activity img" class="img-fluid" />
+            <img
+              src="assets/image/map1.png"
+              alt="activity img"
+              class="img-fluid"
+            />
           </div>
           <div class="col-sm-12 col-md-4 col-lg-4 my-auto">
             <div class="card bg-grey mb-3" style="max-width: 18rem">
@@ -910,7 +902,8 @@
       </div>
     </div>
 
-    <!-- Farmer Testimonial -->
+    <!-- 
+       Testimonial -->
     <div
       class="container py-5"
       style="
@@ -918,7 +911,7 @@
         height: 623px;
         top: 4896px;
         padding: 67px 60px 67px 60px;
-        margin-top: 20px
+        margin-top: 20px;
       "
     >
       <h1 class="mb-5 text-center">
@@ -1050,7 +1043,10 @@
     </div>
 
     <!-- Awards  -->
-    <div class="container" style="width: 1440px; height: 695px; top: 4121px; margin-top: -15px">
+    <div
+      class="container"
+      style="width: 1440px; height: 695px; top: 4121px; margin-top: -15px"
+    >
       <h1 class="my-5 text-center">
         <span class="text-dark fs-1"
           >Awards &
@@ -1094,7 +1090,7 @@
                   class="col-md-6 d-flex align-items-center justify-content-center"
                 >
                   <img
-                    src="assets/image/gallery.png"
+                    src="assets\image\slider3\slider1.png"
                     alt="Los Angeles"
                     class="d-block"
                     style="width: 750px; height: 504px"
@@ -1151,7 +1147,7 @@
                   class="col-md-6 d-flex align-items-center justify-content-center"
                 >
                   <img
-                    src="assets/image/gallery.png"
+                    src="assets\image\slider3\slider2.jpeg"
                     alt="Los Angeles"
                     class="d-block"
                     style="width: 750px; height: 504px"
@@ -1208,7 +1204,7 @@
                   class="col-md-6 d-flex align-items-center justify-content-center"
                 >
                   <img
-                    src="assets/image/gallery.png"
+                    src="assets\image\slider3\slider3.jpeg"
                     alt="Los Angeles"
                     class="d-block"
                     style="width: 750px; height: 504px"
@@ -1532,7 +1528,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.4.8/plyr.js"></script>
     <script src="assets/script.js"></script>
     <!-- Bootstrap Bundle with Popper -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
   </body>
 </html>
