@@ -69,6 +69,7 @@ p {
 }
 .pricingCard {
     
+    height:750px;
     flex: 1;
     transition: all .3s ease-out;
     background-color: white;
@@ -119,11 +120,12 @@ p {
 } */
 
 .pricingCard-pricing {
+    
     text-align: center;
     color: rgb(249, 252, 245);
 }
 .price {
-    font-size:  3rem;
+    font-size:  2rem;
     font-weight: 600;
 }
 /* .pricingCard-basket1 {
