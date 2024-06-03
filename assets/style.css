@@ -10,6 +10,7 @@
 body {
     font-family: 'Li Ador Noirrit Bold', sans-serif;
     overflow-x: hidden;
+      
 }
 .bg-main{
     background-color: cornsilk;
@@ -564,8 +565,9 @@ p {
     position: relative;
     padding-left: 30px;
     margin-bottom: 10px;
-    line-height: 1.5;
+    line-height: 2;
     color: rgb(251 251 251);
+    font-size: 16px;
 }
 
 .unorder-list1 li:before {
@@ -598,8 +600,9 @@ p {
     position: relative; /* Positioning context for pseudo-elements */
     padding-left: 30px; /* Add left padding for space */
     margin-bottom: 10px; /* Add bottom margin for spacing between items */
-    line-height: 1.5; /* Set line height for better readability */
+    line-height: 2; /* Set line height for better readability */
     color: rgb(251 251 251); /* Set text color */
+    font-size: 16px;
 }
 
 /* Style the circle */
@@ -607,7 +610,7 @@ p {
     content: '✕'; /* Use cross mark character */
     position: absolute; /* Position the cross mark */
     left: 0; /* Align cross mark to the left */
-    top: 50%; /* Center vertically */
+    top: 16px; /* Center vertically */
     transform: translateY(-50%); /* Adjust for vertical centering */
     width: 20px; /* Set cross mark width */
     height: 20px; /* Set cross mark height */
@@ -615,7 +618,7 @@ p {
     background-color: #ccc; /* Set cross mark color */
     color: #fff; /* Set cross mark text color */
     text-align: center; /* Center cross mark */
-    line-height: 20px; /* Center cross mark vertically */
+    line-height: 20px; 
     font-size: 16px; /* Set cross mark size */
 }
 
@@ -737,4 +740,5 @@ p {
    position: relative;
   
 }
+
 
